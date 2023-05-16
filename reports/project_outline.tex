@@ -1,0 +1,56 @@
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{babel}
+\begin{document}
+\title{HM811 - Computational Tools for Research}
+\author{J. A. Kilgallen}
+\maketitle
+
+\section{Introduction}
+
+The HM811 assignment is to submit 3 programs which carry out tasks
+useful to my research, each of which must be in a different programming
+language. The available languages to choose from are:
+\begin{itemize}
+\item C
+\item Bash
+\item Perl
+\item \LaTeX
+\item Octave/MATLAB
+\item R
+\end{itemize}
+
+\section{Project Structure }
+
+The structure I've decided for my project is to build a docker image
+which will:
+\begin{itemize}
+\item Install the required packages and libraries.
+\item Pull Octave code from a repository. 
+\item Run an Octave script to generate several plots as PDFs, and a series
+of images as PNGs.
+\item Render the PNGs into an animation using the FFMPEG library.
+\item Compile a \LaTeX document which includes the animation, and the plots
+generated in the previous step.
+\end{itemize}
+
+\section{Project Content}
+
+The content of the document which is the final output will be a brief
+overview of a class of optical illusions known as MacKay effects (including
+proper bibtex referencing of significant papers), which includes high-quality
+graphics of static stimuli which exhibit the effect. The second portion
+of the document will discuss future work on the MacKay effect and
+will include dyanimic stimuli in the form of embedded MPEGs.
+
+\section{Project Stages}
+
+The project will have three primary stages:
+\begin{enumerate}
+\item Building a basic docker image.
+\item Writing Octave code to generate relevant plots.
+\item Writing \LaTeX document.
+\end{enumerate}
+
+\end{document}
