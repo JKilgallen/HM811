@@ -1,3 +1,5 @@
 *.lyx
 *.lyx~
 *.synctex.gz
+*.log
+*.aux
